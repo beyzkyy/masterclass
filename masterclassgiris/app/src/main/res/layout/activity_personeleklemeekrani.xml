@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".personeleklemeekrani">
+
+    <EditText
+        android:id="@+id/telno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="tel-no"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="@+id/ders"
+        app:layout_constraintTop_toBottomOf="@+id/ders" />
+
+    <EditText
+        android:id="@+id/adsoyad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="82dp"
+        android:ems="10"
+        android:hint="ad-soyad"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/button9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+    <EditText
+        android:id="@+id/okul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="okul"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/adsoyad"
+        app:layout_constraintTop_toBottomOf="@+id/adsoyad" />
+
+    <EditText
+        android:id="@+id/ıban"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:hint="IBAN"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/mail"
+        app:layout_constraintTop_toBottomOf="@+id/mail" />
+
+    <EditText
+        android:id="@+id/tarih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="tarih"
+        android:inputType="time"
+        app:layout_constraintStart_toStartOf="@+id/ıban"
+        app:layout_constraintTop_toTopOf="@+id/ıban" />
+
+    <EditText
+        android:id="@+id/bolum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:ems="10"
+        android:hint="bolum"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/ders"
+        app:layout_constraintStart_toStartOf="@+id/ders" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:ems="10"
+        android:hint="mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/telno"
+        app:layout_constraintTop_toBottomOf="@+id/telno" />
+
+    <EditText
+        android:id="@+id/ders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="ders"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/okul"
+        app:layout_constraintTop_toBottomOf="@+id/okul" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="37dp"
+        android:onClick="kaydet"
+        android:text="Kaydet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tarih" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="43dp"
+        android:onClick="geridon"
+        android:text="X"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
